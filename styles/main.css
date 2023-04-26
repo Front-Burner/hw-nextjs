@@ -1,0 +1,49 @@
+/* Webfonts */
+@import '_fonts.css';
+
+/* Tailwind base/components */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+
+/* Custom Style Imports */
+@import '_typography.css';
+@import '_locomotive.css';
+
+/* Tailwind Utilities */
+@import 'tailwindcss/utilities';
+
+
+/* Simple defaults */
+
+body {
+  @apply font-sans antialiased text-black bg-white;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.ticker-wrapper {
+    @apply overflow-hidden w-64;
+}
+
+.Marquee { 
+    white-space: nowrap;
+    overflow-x: hidden;
+    display: block;
+    position: relative;   
+}
+
+.MarqueeContent {
+    display: inline-block;
+    text-align: left;
+}
+
+.bigDot::before {
+ content: "•";
+ margin-left: -0.8rem;
+}
+
+.btn {
+  @apply py-[2rem] lg:py-5 px-[3rem] lg:px-8;
+}

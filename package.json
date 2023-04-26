@@ -1,0 +1,58 @@
+{
+  "name": "font-burner-next-sanity",
+  "description": "A nextjs template for Front Burner with sanity v2",
+  "author": "Front Burner <webdeveloper@fbrest.com> (https://www.fb-society.com/)",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Front-Burner/fb-template-nextjs.git"
+  },
+  "bugs": {
+    "url": "git@github.com:Front-Burner/fb-template-nextjs/issues"
+  },
+  "license": "ISC",
+  "keywords": [
+    "nextjs",
+    "next",
+    "tailwind",
+    "framer",
+    "motion",
+    "preact"
+  ],
+  "homepage": "https://www.fb-society.com/",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@sanity/block-content-to-react": "^3.0.0",
+    "@sanity/client": "^3.3.2",
+    "framer-motion": "^4.1.17",
+    "geolib": "^3.3.3",
+    "locomotive-scroll": "^4.1.4",
+    "lodash": "^4.17.21",
+    "next": "^12.2.5",
+    "next-sanity": "^0.6.0",
+    "next-sanity-image": "^3.2.1",
+    "next-seo": "^4.26.0",
+    "postcss-import": "^14.0.0",
+    "postcss-nested": "^5.0.5",
+    "postcss-preset-env": "^6.7.0",
+    "preact": "^10.5.13",
+    "qs": "^6.11.0",
+    "react": "^17.0.2",
+    "react-cookie": "^4.1.1",
+    "react-device-detect": "^2.2.2",
+    "react-dom": "^17.0.2",
+    "react-locomotive-scroll": "^0.2.2",
+    "react-transition-group": "^4.4.2"
+  },
+  "devDependencies": {
+    "@svgr/webpack": "^6.5.0",
+    "autoprefixer": "^10.4.2",
+    "eslint": "^8.20.0",
+    "postcss": "^8.4.14",
+    "tailwindcss": "^3.1.6"
+  }
+}
