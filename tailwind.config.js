@@ -5,8 +5,10 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      'sans': ['Rubik', 'sans-serif'],
-      'mono': ['Lucida Console', 'Courier', 'monospace'],
+      sans: ["Rubik", "sans-serif"],
+      mono: ["Lucida Console", "Courier", "monospace"],
+      cast: ["CastIron-Black", "sans-serif"],
+      max: [""],
     },
     screens: {
       sm: "640px",
@@ -14,19 +16,20 @@ module.exports = {
       lg: "1024px",
       xl: "1280px",
       "2xl": "1600px",
-      "3xl": "1920px"
+      "3xl": "1920px",
     },
     extend: {
       colors: {
-        'black': '#11052C',
-        'white': '#f4f5f5',
-        'example-color': {
-          light: '#ffb288',
-          DEFAULT: '#d18d67',
-          dark: '#ce8860',
+        black: "#11052C",
+        white: "#f4f5f5",
+        maroon: "#501B1B",
+        "example-color": {
+          light: "#ffb288",
+          DEFAULT: "#d18d67",
+          dark: "#ce8860",
         },
-      }
+      },
     },
   },
-  plugins: []
-}
+  plugins: [],
+};

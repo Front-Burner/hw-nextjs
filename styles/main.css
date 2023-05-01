@@ -1,47 +1,43 @@
 /* Webfonts */
-@import '_fonts.css';
+@import "_fonts.css";
 
 /* Tailwind base/components */
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
+@import "tailwindcss/base";
+@import "tailwindcss/components";
 
 /* Custom Style Imports */
-@import '_typography.css';
-@import '_locomotive.css';
+@import "_typography.css";
+@import "_locomotive.css";
 
 /* Tailwind Utilities */
-@import 'tailwindcss/utilities';
-
+@import "tailwindcss/utilities";
 
 /* Simple defaults */
 
 body {
-  @apply font-sans antialiased text-black bg-white;
-
-  &::-webkit-scrollbar {
-    display: none;
-  }
+  @apply font-sans antialiased text-black;
+  /* background-image: url("/images/2.png"); */
 }
 
 .ticker-wrapper {
-    @apply overflow-hidden w-64;
+  @apply overflow-hidden w-64;
 }
 
-.Marquee { 
-    white-space: nowrap;
-    overflow-x: hidden;
-    display: block;
-    position: relative;   
+.Marquee {
+  white-space: nowrap;
+  overflow-x: hidden;
+  display: block;
+  position: relative;
 }
 
 .MarqueeContent {
-    display: inline-block;
-    text-align: left;
+  display: inline-block;
+  text-align: left;
 }
 
 .bigDot::before {
- content: "•";
- margin-left: -0.8rem;
+  content: "•";
+  margin-left: -0.8rem;
 }
 
 .btn {
