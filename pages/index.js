@@ -18,7 +18,7 @@ import Intro from "@/components/intro";
 import SanityPageService from "@/services/sanityPageService";
 import ShineHover from "@/components/button";
 import MobileNavButton from "@/components/mobileNavButton";
-
+import CarouselHero from "@/components/carouselHero";
 const query = `{
   "global": *[_type == 'global'][0] {
     title,
@@ -85,7 +85,6 @@ const Home = (initialData) => {
 
   return (
     <Layout>
-      {/* <Intro locations={locations} /> */}
       <Seo
         pageSeo={home?.seo}
         defaultSeo={global.seo}
@@ -97,7 +96,7 @@ const Home = (initialData) => {
           initial="initial"
           animate="enter"
           exit="exit"
-          className="pt-[5rem] px-5 min-h-[calc(100vh-3.5rem)] grid gap-y-4"
+          className="pt-[5rem] min-h-[calc(100vh-3.5rem)] grid gap-y-4"
         >
           <div className="mx-auto">
             <code className="font-cast">
@@ -106,14 +105,12 @@ const Home = (initialData) => {
               id: {store[0].id} <br />
             </code>
           </div>
-          <ShineHover color={`red`} text="Make a Reservation" />
-          <MobileNavButton />
           <m.div variants={fade}>
             <Sections body={home.sections} />
           </m.div>
         </m.main>
       </LazyMotion>
-      <Footer />
+      <Footer locations={locations} />
     </Layout>
   );
 };

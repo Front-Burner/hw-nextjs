@@ -23,6 +23,12 @@ module.exports = {
         black: "#11052C",
         white: "#f4f5f5",
         maroon: "#501B1B",
+        orange: "#854E2A",
+        slate: "#32342E",
+        creme: "#ECE3CE",
+        "washed-creme": "#EEE8D8",
+        "dark-creme": "#E5CFA8",
+        olive: "#878D75",
         "example-color": {
           light: "#ffb288",
           DEFAULT: "#d18d67",

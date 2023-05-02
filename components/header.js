@@ -19,6 +19,7 @@ import Inside from "@/public/svg/inside.svg";
 import BottomBun from "@/public/svg/bottomBun.svg";
 import MenuButton from "./menuButton";
 import MobileNavButton from "./mobileNavButton";
+import Logo from "@/public/svg/logo.svg";
 
 export default function Header({ locations, route, navigation, preview }) {
   const [sharedState, setShareState] = useLocationContext();
@@ -98,13 +99,8 @@ export default function Header({ locations, route, navigation, preview }) {
       } pt-5 px-5 mb-5 absolute bg-[url('../public/images/2.png')] z-50 w-full font-bold text-base md:text-4xl `}
     >
       <LazyMotion features={domAnimation}>
-        <div className="flex border-b border-black  py-2 items-end z-50">
-          <FancyLink
-            destination="/"
-            a11yText="Navigate to the home page"
-            label="Front Burner"
-            extraClasses="text-[2rem] mb-1 no-underline md:mb-0 flex z-50"
-          />
+        <div className="flex border-b border-black  py-2 items-end z-50  ">
+          <Logo />
 
           <div className="hidden lg:flex flex-col  z-50 mx-auto ">
             <m.button

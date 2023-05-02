@@ -16,7 +16,7 @@
 
 body {
   @apply font-sans antialiased text-black;
-  /* background-image: url("/images/2.png"); */
+  background-image: url("/images/1365.png");
 }
 
 .ticker-wrapper {
